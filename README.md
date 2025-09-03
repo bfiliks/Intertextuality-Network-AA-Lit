@@ -55,7 +55,7 @@ This repository contains a **timeline–network visualization** and supporting m
 
 ## Citation
 If you use or adapt this repository, please cite as:
-> Oke, Felix B. *Intertextual Influence Network in African American Literature.* 2025. HathiTrust Research Center (Demo).
+> Oke, Felix B. *Intertextual Influence Network in African American Literature.* 2025. 
 
 ---
 
