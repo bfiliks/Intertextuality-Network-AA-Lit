@@ -1,6 +1,7 @@
 # Intertextual Influence Network in African American Literature
 
-This repository contains a **timeline–network visualization** and supporting materials for exploring **intertextual influence** among key works in African American literature (1830s–present). It accompanies a research direction developed at the **HathiTrust Research Center (HTRC)** and demonstrates a *weighted influence* approach (direct reuse, thematic echoes, stylistic resonance).
+This repository contains a **timeline–network visualization** and supporting materials for exploring **intertextual influence** among key works in African American literature (1830s–present). It demonstrates a *weighted influence* approach (direct reuse, thematic echoes, stylistic resonance).
+
 
 ## What's Inside
 - `assets/interactive.html` — Interactive Plotly graph with **theme filters**.
@@ -44,7 +45,7 @@ This repository contains a **timeline–network visualization** and supporting m
 3. In **Settings → Pages**, set:
    - **Source:** `main` branch
    - **Root:** `/` (or `/docs` if you move files there)
-4. Access it at: `https://<your-username>.github.io/Intertextuality-Network-AA-Lit/assets/interactive.html`
+4. Access it at: `https://bfiliks.github.io/Intertextuality-Network-AA-Lit/assets/interactive.html`
 
 ## Alternative Hosting
 - **Hugging Face Spaces:** host `interactive.html` as a static demo (`Static` Space).
@@ -60,3 +61,15 @@ If you use or adapt this repository, please cite as:
 ---
 
 **Contact:** bfiliks4xt@gmail.com/website. Contributions welcome via pull requests.
+
+## Build From CSV (CLI)
+
+You can regenerate the interactive network from a CSV (`edges.csv`) using the included script:
+
+```bash
+python build_network.py
+```
+
+- Edit `edges.csv` to add or modify connections (columns: `source_title,source_year,target_title,target_year,weight,themes,note` where `themes` are semicolon-separated).
+- The script writes a fresh `assets/interactive.html` each run.
+
